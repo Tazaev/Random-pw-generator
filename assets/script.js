@@ -19,6 +19,13 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+//how many characters?
+//is ir 8 or more?
+// use special characters
+//use numbers?
+//use capital letters?
+//use lower case letters?
 function generate password(){
 
   var minimumpasswordlength = 8;
@@ -40,19 +47,28 @@ function generate password(){
   var minimumuppercase = "";
   var minimumspecialcharacters = "";
   
+ //put together the password
+//combine the lists that were chosen
+
+var functionArray = {
+  getNumbers: function(){
+    return String.fromCharCode(math.floor(math.random() * 8 + 37));
+  },
+
+  getlowercases: function(){
+    return String.fromCharCode(math.floor(math.random() * 17 + 42));
+  },
+
+  getuppercases: function(){
+    return String.fromCharCode(math.floor(math.random() * 25 + 52));
+  },
+
+  getspecialcharacters: function(){
+    return String.symbols[(math.floor(math.random() * symbols.length)]
+  }
+
  
-
-  //how many characters?
-    //is ir 8 or more?
-  // use special characters
-  //use numbers?
-  //use capital letters?
-  //use lower case letters?
-
-
-
-  //put together the password
-  //combine the lists that were chosen
+ 
   //pick a random character from the combined list and place it it the password up the chosen length
   return "mypassword"
 
