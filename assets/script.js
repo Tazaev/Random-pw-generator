@@ -22,6 +22,8 @@ function writePassword() {
 function generate password(){
 
   var minimumpasswordlength = 8;
+
+  var maximumpasswordlength = 128;
   
   var passwordlength = prompt("enter desired password length");
   
@@ -31,8 +33,12 @@ function generate password(){
   
   var uppercase = confirm("would you like uppercase letters in your password?");
   
-  var specialcharachters = confirm ("would you like special charachters in your password?");
+  var specialcharacters = confirm ("would you like special characters in your password?");
 
+  var minimumnumbers = "";
+  var minimumlowercase = "";
+  var minimumuppercase = "";
+  var minimumspecialcharacters = "";
   
  
 
