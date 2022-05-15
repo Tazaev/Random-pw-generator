@@ -9,18 +9,26 @@ var lowercasearray = ["a","b","c","d","e","f","g","h","i","g","k","l","m","n","o
 var uppercasearray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
 var numberarray = ["1","2","3","4","5","6","7","8","9","0",];
 
-
 // Assignment Code
+var generateBtn = document.querySelector("#generate");
 
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var rightprompts = getprompts();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  if (rightprompts){
+  var newpassword = generatePassword();
+  passwordText.value = newpassword;
+  }else{
+      passwordText.value = "";
+  }
 
-}
+};
+
 
 //how many characters?
 //is ir 8 or more?
