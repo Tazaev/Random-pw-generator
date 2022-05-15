@@ -29,6 +29,16 @@ function writePassword() {
 
 };
 
+function generatePassword() {
+  var password = "";
+  for(var i = 0; i< characterlength; i++){
+      var randomcharacter = Math.floor(Math.random() * choicearray.length);
+      password = password + choicearray[randomcharacter];
+  }
+  return password;
+
+};
+
 
 //how many characters?
 //is ir 8 or more?
@@ -36,8 +46,7 @@ function writePassword() {
 //use numbers?
 //use capital letters?
 //use lower case letters?
-function generatePassword(){
-console.log("hey you clicked the button")
+
  // var minimumpasswordlength = 8;
 
  // var maximumpasswordlength = 128;
