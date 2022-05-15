@@ -1,1 +1,2 @@
 # Random-pw-generator
+Hello! , this project is about using Javascript to work in tangent with HTML elements on a screen to allow a user to click a button and go though various prompts to generate a customizable random password that would include lowercase,uppercase, numbers and special characters all in order to create a complex password.![Screenshot (11)](https://user-images.githubusercontent.com/104277419/168499549-c70dfbbf-2b47-4c00-8c71-f0dde90177ab.png)
