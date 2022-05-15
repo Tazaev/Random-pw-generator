@@ -46,91 +46,16 @@ if (isNaN(characterlength) || characterlength < 8 || characterlength > 128){
   alert("Character length needs to contain 8-128 characters");
   return false;
 }
-//how many characters?
-//is ir 8 or more?
-// use special characters
-//use numbers?
-//use capital letters?
-//use lower case letters?
+// confirm prompt asking user to confirm given option
+  if (confirm("would you like lowercase letters in your password?")){
+  choicearray = choicearray.concat(lowercasearray);
 
-
-  
-  var passwordlength = prompt("enter desired password length");
-  
-  var numbers = confirm("would you like numbers in your password?");
-  
-  var lowercase = confirm("would you like lowercase letters in your password?");
-  
-  var uppercase = confirm("would you like uppercase letters in your password?");
-  
-  var specialcharacters = confirm ("would you like special characters in your password?");
-
-  var minimumnumbers = "";
-  var minimumlowercase = "";
-  var minimumuppercase = "";
-  var minimumspecialcharacters = "";
-  
- //put together the password
- //combine the lists that were chosen
-
- var functionArray = {
-  getNumbers: function(){
-    return String.fromCharCode(math.floor(math.random() * 8 + 37));
-  },
-
-  getlowercases: function(){
-    return String.fromCharCode(math.floor(math.random() * 17 + 42));
-  },
-
-  getuppercases: function(){
-    return String.fromCharCode(math.floor(math.random() * 25 + 52));
-  },
-
-  getspecialcharacters: function(){
-    return String.symbols[math.floor(math.random() * symbols.length)]
-  }
+}
+return true;
 };
-
-  if (numbers === true) {
-    minimumNumbers = functionArray.getNumbers();
-    minimumCount++;
-  }
-
-
-
-  if (lowerCases === true) {
-    minimumLowerCases = functionArray.getLowerCases();
-    minimumCount++;
-
-  }
-
-  if (upperCases === true) {
-    minimumUpperCases = functionArray.getUpperCases();
-    minimumCount++;
-
-  }
-
-  if (special === true) {
-    minimumSpecialCharacters = functionArray.getSpecialCharacters();
-    minimumCount++;
-
-  }
  
-  var randompasswordgenerated = "";
-
-  for (let i=0; i < (parseInt(passwordlength) - minimumcount); i++){
-    var randomnumberpicked = math.floor(math.random() * 4);
-  }
-  randomPasswordGenerated += minimumNumbers;
-  randomPasswordGenerated += minimumLowerCases;
-  randomPasswordGenerated += minimumUpperCases;
-  randomPasswordGenerated += minimumSpecialCharacters;
-
-  //pick a random character from the combined list and place it it the password up the chosen length
 
  
-  return "mypassword"
-};
 
 
 
