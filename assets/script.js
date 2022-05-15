@@ -1,7 +1,4 @@
-//list of special characters -!@#$%^&*()_+-
-//list of numerical digits
-//list of upper case characters
-//list of lowercase characters
+// lines 2-7 are universal variables to be used as source data for user generated passwords
 var characterlength = 8;
 var choicearray= [];
 var specialcharacterarray = ["!","@","#","$","%","^","&","*","~","<",">","?","/",];
@@ -9,7 +6,7 @@ var lowercasearray = ["a","b","c","d","e","f","g","h","i","g","k","l","m","n","o
 var uppercasearray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
 var numberarray = ["1","2","3","4","5","6","7","8","9","0",];
 
-// Assignment Code
+// 
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
@@ -39,6 +36,11 @@ function generatePassword() {
 
 };
 
+// code below is for a function that displays prompts for the user to confirm his password customization
+function getprompts(){
+  choicearray = [];
+
+  characterlength = prompt("Enter desired password length(8 - 128 characters)"); 
 
 //how many characters?
 //is ir 8 or more?
@@ -47,9 +49,7 @@ function generatePassword() {
 //use capital letters?
 //use lower case letters?
 
- // var minimumpasswordlength = 8;
 
- // var maximumpasswordlength = 128;
   
   var passwordlength = prompt("enter desired password length");
   
@@ -129,6 +129,4 @@ function generatePassword() {
 };
 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
