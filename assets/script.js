@@ -41,7 +41,11 @@ function getprompts(){
   choicearray = [];
 
   characterlength = prompt("Enter desired password length(8 - 128 characters)"); 
-
+// Code on line 51-53 is a rule for the user password to be between 8-128 characters long with an alert if user submits a password length outside of the allowed range.
+if (isNaN(characterlength) || characterlength < 8 || characterlength > 128){
+  alert("Character length needs to contain 8-128 characters");
+  return false;
+}
 //how many characters?
 //is ir 8 or more?
 // use special characters
